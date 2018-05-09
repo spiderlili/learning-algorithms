@@ -11,12 +11,18 @@ var factorial = function(n) {
 	    return 1;
 	}
 	// recursive case:
-	result = n * factorial(n-1);
-	return result;
+	result = factorial(n-1) * n;
+	//return result;
+	return factorial(n-1) * n;
 }; 
+
 
 println("The value of 0! is " + factorial(0) + ".");
 println("The value of 5! is " + factorial(5) + ".");
 
 Program.assertEqual(factorial(0), 1);
 Program.assertEqual(factorial(5), 120);
+Program.assertEqual(factorial(1), 1);
+Program.assertEqual(factorial(2), 2);
+
+
