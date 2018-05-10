@@ -1,7 +1,7 @@
 //if n = 0: declare that n! = 1
 //otherwise: 
-//1. solve the subproblem of computing the recursive case (n-1)!, 
-//2. multiply this result by n, 
+//1. solve the subproblem of computing the recursive case (n-1)!
+//2. multiply this result by n
 //3. declare the base case n! = to this result
 
 var factorial = function(n) {
