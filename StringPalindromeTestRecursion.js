@@ -15,11 +15,11 @@ var middleCharacters = function(str) {
 };
 
 var isPalindrome = function(str) {
-    // base case #1
+    // base case #1: the string is a palindrome if the length of the string is 0 or 1. 
     if(str.length <= 1){
         return true;
     }
-    // base case #2
+    // base case #2: if the first and last characters of the string are different, then the string is not a palindrome. 
     if(firstCharacter(str) !== lastCharacter(str)){
         return false;
     }
