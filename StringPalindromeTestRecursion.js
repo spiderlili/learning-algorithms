@@ -23,7 +23,7 @@ var isPalindrome = function(str) {
     if(firstCharacter(str) !== lastCharacter(str)){
         return false;
     }
-    // recursive case
+    // recursive case 
     return isPalindrome(middleCharacters(str));
 };
 
