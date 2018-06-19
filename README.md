@@ -19,6 +19,7 @@ Towers of Hanoi
 Sorting:
 Merge Sort, 
 Quick Sort,
+Heap Sort,
 Selection Sort,
 Insertion Sort
 
