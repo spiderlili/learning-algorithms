@@ -1,4 +1,6 @@
-// check if given two strings are at distance one.
+//check if given two strings are at distance one.
+//simultaneously traverse both strings and keep track of count of different characters.
+
 using System;
  
 class GFG{
