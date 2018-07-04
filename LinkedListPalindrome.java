@@ -1,3 +1,5 @@
+//This method takes O(n) time and O(1) extra space
+
 class LinkedList 
 {
     Node head;  // head of list
