@@ -3,7 +3,7 @@
 
 using System;
  
-class GFG{
+class EditDistanceTwoStrings{
 // Returns true if edit distance 
 // between s1 and s2 is one, else false
 static bool isEditDistanceOne(String s1,String s2){
