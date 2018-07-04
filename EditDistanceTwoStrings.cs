@@ -5,7 +5,7 @@ using System;
  
 class EditDistanceTwoStrings{
 // Returns true if edit distance between s1 and s2 is 1, else false
-static bool isEditDistanceOne(String str1,String str2){
+ static bool isEditDistanceOne(String str1,String str2){
      
     // Find lengths of given strings
     int str1Length = str1.Length, str2Length = str2.Length;
@@ -20,7 +20,7 @@ static bool isEditDistanceOne(String str1,String str2){
          
     while (i < str1Length && j < str2Length){
         // If current characters don't match
-        if (str1[i] != str2[j])
+        if (str1[i] !== str2[j])
         {
             if (count == 1)
                 return false;
