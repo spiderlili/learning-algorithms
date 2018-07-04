@@ -1,4 +1,4 @@
-Search all anagrams of a pattern in a text
+#Search all anagrams of a pattern in a text
  
 MAX=256
  
