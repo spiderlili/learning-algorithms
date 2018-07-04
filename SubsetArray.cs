@@ -1,5 +1,9 @@
 //find whether an array is subset of another array
+//1) Sort both arrays: arr1[] and arr2[] O(mLogm + nLogn)
+//2) Use Merge type of process to see if all elements of sorted arr2[] are present in sorted arr1[].
+     
 using System;
+
 class SubsetArray {
      
     // Return true if arr2[] is 
