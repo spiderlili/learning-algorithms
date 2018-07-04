@@ -42,4 +42,6 @@ Dynamic Multithreading,
 Multithreaded matrix multiplication,
 Multithreaded merge sort
 
+Reading List:
+http://bigocheatsheet.com/
 
