@@ -20,8 +20,7 @@ class EditDistanceTwoStrings{
          
     while (i < str1Length && j < str2Length){
         // If current characters don't match
-        if (str1[i] !== str2[j])
-        {
+        if (str1[i] !== str2[j]){
             if (count == 1)
                 return false;
  
