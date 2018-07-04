@@ -4,28 +4,27 @@
 using System;
  
 class EditDistanceTwoStrings{
-// Returns true if edit distance 
-// between s1 and s2 is one, else false
-static bool isEditDistanceOne(String s1,String s2){
+// Returns true if edit distance between s1 and s2 is 1, else false
+static bool isEditDistanceOne(String str1,String str2){
      
     // Find lengths of given strings
-    int m = s1.Length, n = s2.Length;
+    int str1Length = str1.Length, str2Length = str2.Length;
  
     // If difference between lengths is 
     // more than 1, then strings can't 
     // be at one distance
-    if (Math.Abs(m - n) > 1)
+    if (Math.Abs(str1Length - str2Length) > 1)
         return false;
  
         // Count of edits
         int count = 0;
         int i = 0, j = 0;
          
-    while (i < m && j < n)
+    while (i < str1Length && j < str2Length)
     {
         // If current characters 
         // don't match
-        if (s1[i] != s2[j])
+        if (str1[i] != str2[j])
         {
             if (count == 1)
                 return false;
@@ -33,9 +32,9 @@ static bool isEditDistanceOne(String s1,String s2){
             // If length of one string is
             // more, then only possible edit
             // is to remove a character
-            if (m > n)
+            if (str1Length > str2Length)
                 i++;
-            else if (m< n)
+            else if (str1Length < str2Length)
                 j++;
                  
              // If lengths of both 
@@ -60,18 +59,17 @@ static bool isEditDistanceOne(String s1,String s2){
  
     // If last character is extra 
     // in any string
-    if (i < m || j < n)
+    if (i < str1Length || j < str2Length)
         count++;
  
     return count == 1;
 }
  
 // Driver code
-public static void Main ()
-{
-    String s1 = "gfg";
-    String s2 = "gf";
-    if(isEditDistanceOne(s1, s2))
+public static void Main (){
+    String str1 = "gfg";
+    String str2 = "gf";
+    if(isEditDistanceOne(str1, str2))
         Console.WriteLine("Yes");
     else
         Console.WriteLine("No"); 
