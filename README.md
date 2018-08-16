@@ -42,6 +42,6 @@ Dynamic Multithreading,
 Multithreaded matrix multiplication,
 Multithreaded merge sort
 
-Reading List:
+## Reading List:
 http://bigocheatsheet.com/ <br>
 https://www.khanacademy.org/computing/computer-science/algorithms
