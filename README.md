@@ -43,5 +43,5 @@ Multithreaded matrix multiplication,
 Multithreaded merge sort
 
 Reading List:
-http://bigocheatsheet.com/
+http://bigocheatsheet.com/ <br>
 https://www.khanacademy.org/computing/computer-science/algorithms
